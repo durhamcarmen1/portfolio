@@ -505,7 +505,7 @@ body {
 
   .hero {
     flex-direction: column;
-    max-height: 150vh;
+    max-height: 250vh;
     padding: 3rem 5rem;
   }
 
