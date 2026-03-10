@@ -505,7 +505,7 @@ body {
 
   .hero {
     flex-direction: column;
-    max-height: 800px;
+    max-height: 150vh;
     padding: 3rem 5rem;
   }
 
@@ -531,8 +531,8 @@ body {
   }
 
   .hero {
-    /* flex-direction: column; */
-    /* max-height: 100vh; */
+    /* flex-direction: column;
+    max-height: 100vh; */
     padding: 3rem 2rem;
   }
 
@@ -549,7 +549,10 @@ body {
 }
 
 @media only screen and (max-width: 601px) {
-  .menu-work {
+  /* .menu-work {
+    display: none;
+  } */
+  .menu-about {
     display: none;
   }
 
@@ -611,5 +614,11 @@ body {
 
   .card .tag .skill {
     font-size: small;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .menu-work {
+    display: none;
   }
 }
