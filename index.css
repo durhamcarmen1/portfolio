@@ -531,8 +531,8 @@ body {
   }
 
   .hero {
-    flex-direction: column;
-    max-height: 100vh;
+    /* flex-direction: column; */
+    /* max-height: 100vh; */
     padding: 3rem 2rem;
   }
 
@@ -545,12 +545,6 @@ body {
     max-width: 100%;
     object-position: 10% 16%;
     margin-top: 10px;
-  }
-}
-
-@media only screen and (max-width: 601px) {
-  .menu-about {
-    display: none;
   }
 }
 
