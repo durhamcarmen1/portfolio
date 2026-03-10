@@ -517,7 +517,8 @@ body {
     aspect-ratio: 5/4;
     max-width: 70%;
     object-position: 10% 16%;
-    margin-top: 10px;
+    margin: 10px auto 0;
+    display: block;
   }
 }
 
