@@ -518,7 +518,6 @@ body {
     max-width: 70%;
     object-position: 10% 16%;
     margin-top: 10px;
-    display: block;
   }
 }
 
@@ -543,7 +542,7 @@ body {
 
   .hero img {
     aspect-ratio: 5/4;
-    max-width: 100%;
+    max-width: 70%;
     object-position: 10% 16%;
     margin-top: 10px;
   }
