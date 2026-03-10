@@ -515,7 +515,8 @@ body {
 
   .hero img {
     aspect-ratio: 5/4;
-    max-width: 100%;
+    max-width: 80%;
+    margin: auto;
     object-position: 10% 16%;
     margin-top: 10px;
   }
