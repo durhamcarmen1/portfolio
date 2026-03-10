@@ -507,7 +507,6 @@ body {
     flex-direction: column;
     max-height: 250vh;
     padding: 3rem 5rem;
-    align-items: center;
   }
 
   .hero p {
@@ -519,6 +518,7 @@ body {
     max-width: 70%;
     object-position: 10% 16%;
     margin-top: 10px;
+    align-self: center;
   }
 }
 
