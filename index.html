@@ -14,6 +14,8 @@
     <title>Carmen | Portfolio</title>
   </head>
   <body>
+    <!-- NAVBAR -->
+
     <header class="navbar">
       <div class="container">
         <nav class="left">
@@ -25,30 +27,54 @@
         </nav>
       </div>
     </header>
+
+    <!-- HERO -->
+
     <div class="content-grid">
       <div class="hero" id="hero">
         <div class="description" id="about">
           <h1>Hi, I'm C<span class="underline">armen.</span></h1>
           <p>
-            I'm an Instructional Designer with experience developing eLearning
-            modules and curriculum on topics like software, marketing, customer
-            service, time management, construction, and social development for
-            children.
+            I develop online modules on topics like software, marketing,
+            customer service, time management, construction, and empathy. I'm
+            analytical and strategic, and I faciliate respectful collaborations
+            between clients, SMEs, content writers, designers, and editors.
           </p>
           <p>
-            I quickly adapt to new software and writing styles, and I bring
+            I quickly adapt to new technology and writing styles, and I bring
             empathy, flexibility, and a collaborative mindset to every project.
-            I'm always looking for new ways to grow through professional
-            development. Outside of work, I enjoy yoga, rock climbing, hiking,
-            walking my dog, and catching up on Netflix.
+            I'm always looking for new ways to grow professionally. Outside of
+            work, I enjoy yoga, rock climbing, hiking, walking my dog, and
+            catching up on Netflix.
           </p>
         </div>
         <img src="Images/Profile4.JPG" alt="Carmen's profile image" />
       </div>
+
+      <!-- FEATURED WORK -->
+
       <div class="work" id="work">
         F<span class="underline">eatured Work.</span>
       </div>
-      <div class="card" id="branching">
+
+      <!-- FILTER BAR -->
+
+      <div class="filter-bar" id="filters">
+        <p>Apply Filters</p>
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn" data-filter="storyline">Storyline</button>
+        <button class="filter-btn" data-filter="rise">Rise</button>
+        <button class="filter-btn" data-filter="vyond">Vyond</button>
+        <button class="filter-btn" data-filter="canva">Canva</button>
+        <button class="filter-btn" data-filter="content">Content Dev</button>
+        <button class="filter-btn" data-filter="coding">HTML, CSS, JS</button>
+      </div>
+
+      <!-- CARDS -->
+
+      <div class="card" id="branching" data-tags="storyline">
         <img
           src="Images/HomeBranching.gif"
           alt="Customer service course home page"
@@ -72,7 +98,7 @@
           >
         </div>
       </div>
-      <div class="card" id="healthcare">
+      <div class="card" id="healthcare" data-tags="storyline">
         <img
           src="Images/HomeHealthcare.png"
           alt="Healthcare training course home page"
@@ -97,7 +123,7 @@
           >
         </div>
       </div>
-      <div class="card" id="yoga">
+      <div class="card" id="yoga" data-tags="storyline">
         <img
           src="Images/HomeYoga.png"
           alt="Course page shoing man doing forearm stand yoga pose"
@@ -121,7 +147,7 @@
           >
         </div>
       </div>
-      <div class="card" id="microcourse">
+      <div class="card" id="microcourse" data-tags="storyline vyond">
         <img
           src="Images/HomeMicrocourse2.gif"
           alt="Course page showing children defining empathy"
@@ -146,7 +172,7 @@
           >
         </div>
       </div>
-      <div class="card" id="dei">
+      <div class="card" id="dei" data-tags="rise canva">
         <img src="Images/HomeDEI.png" alt="DEI course home page" />
         <div class="tag">
           <span class="skill">Rise</span>
@@ -169,10 +195,10 @@
           >
         </div>
       </div>
-      <div class="card" id="gamified">
+      <div class="card" id="gamified" data-tags="content">
         <img src="Images/HomeConstruction.jpg" alt="" />
         <div class="tag">
-          <span class="skill">Curriculum Development</span>
+          <span class="skill">Content Development</span>
         </div>
         <h1>Gamified Challenge for Construction</h1>
         <p>
@@ -187,10 +213,10 @@
           >
         </div>
       </div>
-      <div class="card" id="software">
+      <div class="card" id="software" data-tags="content">
         <img src="Images/HomeSoftware.jpg" alt="" />
         <div class="tag">
-          <span class="skill">Curriculum Development</span>
+          <span class="skill">Content Development</span>
         </div>
         <h1>Software Simulation</h1>
         <p>
@@ -206,25 +232,30 @@
           >
         </div>
       </div>
-      <div class="card" id="website">
+      <div class="card" id="website" data-tags="coding">
         <img src="Images/Colors.png" alt="Color palette" />
         <div class="tag">
           <span class="skill">HTML</span>
           <span class="skill">CSS</span>
+          <span class="skill">JS</span>
         </div>
-        <h1>Design</h1>
+        <h1>Design and Coding</h1>
         <p>
-          This site was designed to evoke both professionalism and creativity,
+          I designed this site to evoke both professionalism and creativity,
           with a neutral base and pops of colorful gradients. I prioritized
           accessibility through strong color contrast and ensured the layout is
           responsive for seamless use across devices.
         </p>
         <div class="button-wrapper">
           <a href="index.css" target="_blank"
-            ><button class="primary-button">CSS File</button></a
+            ><button class="primary-button">.css File</button></a
+          >
+          <a href="script.js" target="_blank"
+            ><button class="secondary-button">.js File</button></a
           >
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

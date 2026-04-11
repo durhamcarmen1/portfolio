@@ -233,50 +233,14 @@ body {
   max-width: 70%;
   margin: 0 auto;
   display: grid;
-  grid-template-areas:
-    "hero hero"
-    "work work"
-    "branching healthcare"
-    "yoga microcourse"
-    "dei gamified"
-    "software website";
+  grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
 
-#hero {
-  grid-area: hero;
-}
-
-#work {
-  grid-area: work;
-}
-
-#branching {
-  grid-area: branching;
-}
-
-#healthcare {
-  grid-area: healthcare;
-}
-
-#yoga {
-  grid-area: yoga;
-}
-
-#microcourse {
-  grid-area: microcourse;
-}
-
-#dei {
-  grid-area: dei;
-}
-
-#software {
-  grid-area: software;
-}
-
-#website {
-  grid-area: website;
+#hero,
+#work,
+#filters {
+  grid-column: span 2;
 }
 
 .content-grid h1 {
@@ -334,6 +298,41 @@ body {
 
 /* FEATURED WORK */
 
+.filter-bar {
+  background-color: var(--bg-opaque);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: var(--standard-box-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filter-bar p {
+  display: inline-block;
+  margin: 0;
+}
+
+.filter-btn {
+  letter-spacing: 0.07rem;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: var(--primary-dark);
+  background: var(--bg-light);
+  border-radius: 100px;
+  border: 1px solid var(--primary-dark);
+  padding: 0.3rem 0.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
 .work {
   font-family: var(--secondary-font);
   color: var(--primary-dark);
@@ -353,6 +352,9 @@ body {
   border-radius: 10px;
   padding: 1rem;
   box-shadow: var(--standard-box-shadow);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .card .tag {
@@ -463,17 +465,12 @@ body {
 
   .content-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "hero"
-      "work"
-      "branching"
-      "healthcare"
-      "yoga"
-      "microcourse"
-      "dei"
-      "gamified"
-      "software"
-      "website";
+  }
+
+  #hero,
+  #work,
+  #filters {
+    grid-column: span 1;
   }
 
   .content-grid h1 {
@@ -549,9 +546,6 @@ body {
 }
 
 @media only screen and (max-width: 601px) {
-  /* .menu-work {
-    display: none;
-  } */
   .menu-about {
     display: none;
   }
