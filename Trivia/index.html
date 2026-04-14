@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="start-btn-container">
+      <h2>Quick Think</h2>
+      <p>
+        <b>How to play: </b>Test your knowledge of our HR policies. <br />Select
+        the best answer for each question and see if you can get a high score.
+      </p>
+      <button class="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container hidden">
+      <h1>Quick Think</h1>
+      <div class="timer">Time Left: 10 seconds</div>
+      <h2 class="question">
+        <span class="question-number">1/5</span>
+        <span class="question-text">What is the correct answer?</span>
+      </h2>
+      <div class="answer-choices">
+        <button class="answer-choice correct">A</button>
+        <button class="answer-choice incorrect">B</button>
+        <button class="answer-choice">C</button>
+        <button class="answer-choice">D</button>
+      </div>
+      <button class="next-btn disabled">Next</button>
+    </div>
+
+    <div class="question-feedback-correct hidden">
+      <h2>Correct! ✅</h2>
+      <p>Here's an explanation.</p>
+    </div>
+
+    <div class="question-feedback-incorrect hidden">
+      <h2>Incorrect ❌</h2>
+      <p>Here's an explanation.</p>
+    </div>
+
+    <div class="quiz-results-container hidden">
+      <h2></h2>
+      <!-- <p>Review your results and retake the quiz.</p> -->
+      <button class="retake-btn">Retake quiz</button>
+    </div>
+
+    <!-- Helps with ability to read CSV data with commas and quotation marks -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
